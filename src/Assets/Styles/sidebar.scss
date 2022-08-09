@@ -1,0 +1,144 @@
+.sidebar {
+  width: 250px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 1rem 12px;
+
+  .overview {
+    color: #1c64f2;
+  }
+
+  &__row {
+    margin-bottom: 22px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      background: #f3f4f6;
+    }
+
+    p {
+      margin-left: 1rem;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+
+  &__fixRow {
+    width: 100%;
+    margin-bottom: 22px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+
+    &--top {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 4px 8px;
+      border-radius: 12px;
+
+      &:hover {
+        cursor: pointer;
+        background: #f3f4f6;
+      }
+    }
+
+    &--top-left {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      p {
+        margin-left: 1rem;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+      }
+    }
+
+    ul {
+      list-style: none;
+      margin-left: 38px;
+      width: 100%;
+
+      li {
+        padding: 5px 12px;
+        border-radius: 12px;
+        width: 100%;
+        margin-top: 15px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+
+        &:hover {
+          background: #f3f4f6;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .aylan {
+    transform: rotate(-180deg);
+  }
+
+  .message__sum {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+    padding: 2px 7px;
+    background: #fbd5d5;
+    border-radius: 80px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: #9b1c1c;
+  }
+
+  .line {
+    width: 250px;
+    height: 1px;
+
+    margin: 0.5rem 0 1.5rem 0;
+    margin-left: -12px;
+    background: #e5e7eb;
+  }
+
+  &__bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    img:nth-child(2) {
+      margin: 16px 22px;
+    }
+  }
+}
