@@ -1,0 +1,47 @@
+.footer {
+  padding: 3rem 2rem;
+  background-color: #fff;
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__left {
+    p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #6b7280;
+    }
+  }
+
+  &__right {
+    img {
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+// max-width: 605px
+
+@media only screen and (max-width: 605px) {
+  .footer {
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+    align-items: flex-start;
+
+    &__left {
+      margin-bottom: 2rem;
+    }
+
+    &__right {
+      img {
+        margin: 0 1.5rem 0 0;
+      }
+    }
+  }
+}
