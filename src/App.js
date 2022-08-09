@@ -5,6 +5,8 @@ import "./Assets/Styles/adminHeader.scss";
 import "./Assets/Styles/sidebar.scss";
 import "./Assets/Styles/footer.scss";
 
+import "./Assets/Styles/index.scss";
+
 function App() {
   return (
     <div>
