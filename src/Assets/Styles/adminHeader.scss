@@ -1,0 +1,57 @@
+.adminHeader {
+  padding: 1rem 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__left {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    &--search {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      margin-left: 3rem;
+      background: #f9fafb;
+      width: 402px;
+      height: 45px;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 10px 15px;
+
+      input {
+        background: none;
+        width: 100%;
+        padding: 0px 5px;
+        border: none;
+        outline: none;
+
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        color: #6b7280;
+
+        &::placeholder {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          display: flex;
+          align-items: center;
+          color: #6b7280;
+        }
+      }
+    }
+  }
+}

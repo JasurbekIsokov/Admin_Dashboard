@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import HomeHeader from "./Layouts/HomeHeader";
+import AdminHeader from "./Layouts/AdminHeader";
+import Footer from "./Layouts/Footer";
 
 import "./Assets/Styles/homeHeader.scss";
 import "./Assets/Styles/adminHeader.scss";
@@ -15,7 +17,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomeHeader />}></Route>
+        {/* <Route path="/" element={<HomeHeader />}></Route> */}
+        {/* <Route path="/" element={<AdminHeader />}></Route> */}
+        <Route path="/" element={<Footer />}></Route>
 
         {/* <Route path="*" element={<Stock />}></Route> */}
       </Routes>
