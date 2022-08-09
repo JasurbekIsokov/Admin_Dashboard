@@ -1,0 +1,67 @@
+{
+  "customers": [
+    {
+      "name": "Neil Sims",
+      "email": "email@example.com",
+      "sum": "$367"
+    },
+    {
+      "name": "Bonnie Green",
+      "email": "email@example.com",
+      "sum": "$67"
+    },
+    {
+      "name": "Micheal Gough",
+      "email": "email@example.com",
+      "sum": "$3467"
+    },
+    {
+      "name": "Thomas Lean",
+      "email": "email@example.com",
+      "sum": "$2367"
+    },
+    {
+      "name": "Lana Byrd",
+      "email": "email@example.com",
+      "sum": "$367"
+    },
+    {
+      "name": "Karen Nelson",
+      "email": "email@example.com",
+      "sum": "$1367"
+    }
+  ],
+
+  "products": [
+    {
+      "title": "Restourant Booking App",
+      "description": "React & Bootstrap Framework",
+      "sales": "70 sales"
+    },
+    {
+      "title": "UI kit",
+      "description": "React & Bootstrap Framework",
+      "sales": "54 sales"
+    },
+    {
+      "title": "Design System Pro",
+      "description": "Bootstrap Framework",
+      "sales": "47 sales"
+    },
+    {
+      "title": "Dashboard",
+      "description": "Tailwind React",
+      "sales": "43 sales"
+    },
+    {
+      "title": "Glassmorphism UI",
+      "description": "Vue Js, Tailwind",
+      "sales": "38 sales"
+    },
+    {
+      "title": "Multipurpose Template",
+      "description": "React & Bootstrap Framework",
+      "sales": "22 sales"
+    }
+  ]
+}
