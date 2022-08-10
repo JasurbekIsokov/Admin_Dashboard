@@ -1,0 +1,61 @@
+.products {
+  padding: 1.5rem 1rem;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+
+  hr {
+    margin: 1rem 0;
+    border: 1px solid #e5e7eb;
+  }
+
+  &__title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 1.5rem;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--left {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      p {
+        margin-left: 0.5rem;
+
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+      }
+
+      .email {
+        color: #6b7280;
+        font-size: 12px;
+      }
+    }
+
+    &--right {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+
+      span {
+        color: #6b7280;
+      }
+    }
+  }
+  hr:last-child {
+    display: none;
+  }
+}

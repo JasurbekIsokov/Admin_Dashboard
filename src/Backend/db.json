@@ -41,34 +41,40 @@
 
   "products": [
     {
+      "id": "1",
       "title": "Restourant Booking App",
       "description": "React & Bootstrap Framework",
-      "sales": "70 sales"
+      "sales": "70"
     },
     {
+      "id": "2",
       "title": "UI kit",
       "description": "React & Bootstrap Framework",
-      "sales": "54 sales"
+      "sales": "54"
     },
     {
+      "id": "3",
       "title": "Design System Pro",
       "description": "Bootstrap Framework",
-      "sales": "47 sales"
+      "sales": "47"
     },
     {
+      "id": "4",
       "title": "Dashboard",
       "description": "Tailwind React",
-      "sales": "43 sales"
+      "sales": "43"
     },
     {
+      "id": "5",
       "title": "Glassmorphism UI",
       "description": "Vue Js, Tailwind",
-      "sales": "38 sales"
+      "sales": "38"
     },
     {
+      "id": "6",
       "title": "Multipurpose Template",
       "description": "React & Bootstrap Framework",
-      "sales": "22 sales"
+      "sales": "22"
     }
   ]
 }
