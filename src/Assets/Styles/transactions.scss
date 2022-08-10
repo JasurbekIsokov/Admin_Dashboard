@@ -1,0 +1,108 @@
+.transaction {
+  padding: 1.5rem 1rem;
+  // margin: 10px;
+  background-color: #fff;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  &__title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    // margin-bottom: 5px;
+  }
+
+  &__description {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #6b7280;
+  }
+
+  .table {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    &__head {
+      display: grid;
+      grid-template-columns: 2fr 2fr 2.5fr 1.2fr;
+      align-items: center;
+      border-radius: 12px 12px 0 0;
+      border-bottom: 1px solid #e5e7eb;
+      background-color: #f3f4f6;
+      padding: 14px;
+
+      p {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        color: #6b7280;
+      }
+    }
+
+    &__row {
+      display: grid;
+      grid-template-columns: 2fr 2fr 2.5fr 1.2fr;
+      align-items: center;
+      border-radius: 12px 12px 0 0;
+      padding: 15px;
+
+      p {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        color: #6b7280;
+      }
+
+      span {
+        color: #000;
+        font-weight: 600;
+      }
+
+      .completed,
+      .cancelled,
+      .progress {
+        padding: 5px 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 90px;
+      }
+
+      .cancelled {
+        background: #fbd5d5;
+        color: #9b1c1c;
+      }
+
+      .completed {
+        background: #def7ec;
+        color: #03543f;
+      }
+
+      .progress {
+        background: #e1effe;
+        color: #1e429f;
+      }
+    }
+
+    &__row2,
+    &__row4,
+    &__row6 {
+      background-color: #f3f4f6;
+      border-radius: 12px;
+    }
+  }
+}
