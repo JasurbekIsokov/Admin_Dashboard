@@ -6,6 +6,7 @@ import Customers from "../Components/Customers";
 import Products from "../Components/Products";
 import Transactions from "../Components/Transactions";
 import Footer from "../Layouts/Footer";
+import Chart from "../Components/Chart";
 
 const Admin = () => {
   return (
@@ -16,6 +17,12 @@ const Admin = () => {
           <Sidebar />
         </div>
         <div className="adminPage__section--left">
+          <div className="adminPage__section--chart">
+            <p className="adminPage__section--chart-title">
+              Sales <span>!</span>
+            </p>
+            <Chart />
+          </div>
           <div className="adminPage__section--data">
             <Customers />
             <Products />

@@ -19,6 +19,7 @@ import "./Assets/Styles/gamburgerHomeBtn.scss";
 import "./Assets/Styles/customer.scss";
 import "./Assets/Styles/products.scss";
 import "./Assets/Styles/transactions.scss";
+import "./Assets/Styles/chart.scss";
 
 import "./Assets/Styles/adminPage.scss";
 
