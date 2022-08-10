@@ -1,5 +1,5 @@
 .adminPage__section--chart {
-  padding: 1.5rem 0;
+  padding: 1.5rem;
   background-color: #fff;
   border-radius: 16px;
   border: 1px solid #e5e7eb;
@@ -13,7 +13,6 @@
   font-size: 20px;
   line-height: 150%;
   margin-bottom: 1.5rem;
-  margin-left: 2rem;
   span {
     font-size: 15px;
     color: #a5a7ab;
@@ -23,6 +22,10 @@
   }
 }
 
-.recharts-responsive-container {
-  height: 500px !important;
+.g2-tooltip-marker {
+  background-color: #03743f !important;
+}
+
+.g2-tooltip-value {
+  margin-left: 20px !important;
 }

@@ -6,7 +6,7 @@ import Customers from "../Components/Customers";
 import Products from "../Components/Products";
 import Transactions from "../Components/Transactions";
 import Footer from "../Layouts/Footer";
-import Chart from "../Components/Chart";
+import DemoLine from "../Components/Chart";
 
 const Admin = () => {
   return (
@@ -21,7 +21,7 @@ const Admin = () => {
             <p className="adminPage__section--chart-title">
               Sales <span>!</span>
             </p>
-            <Chart />
+            <DemoLine />
           </div>
           <div className="adminPage__section--data">
             <Customers />
