@@ -1,10 +1,11 @@
 import React from "react";
 
+import AdminHeader from "../Layouts/AdminHeader";
+import Sidebar from "../Layouts/Sidebar";
 import Customers from "../Components/Customers";
 import Products from "../Components/Products";
-import AdminHeader from "../Layouts/AdminHeader";
+import Transactions from "../Components/Transactions";
 import Footer from "../Layouts/Footer";
-import Sidebar from "../Layouts/Sidebar";
 
 const Admin = () => {
   return (
@@ -18,6 +19,9 @@ const Admin = () => {
           <div className="adminPage__section--data">
             <Customers />
             <Products />
+          </div>
+          <div className="adminPage__section--transaction">
+            <Transactions />
           </div>
           <div className="adminPage__section--footer">
             <Footer />

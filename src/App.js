@@ -35,9 +35,9 @@ function App() {
         {/* <Route path="/" element={<Customers />}></Route> */}
         {/* <Route path="/" element={<Products />}></Route> */}
 
-        {/* <Route path="/" element={<Admin />}></Route> */}
+        <Route path="/" element={<Admin />}></Route>
 
-        <Route path="/" element={<Transactions />}></Route>
+        {/* <Route path="/" element={<Transactions />}></Route> */}
 
         {/* <Route path="*" element={<Stock />}></Route> */}
       </Routes>

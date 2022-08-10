@@ -6,6 +6,7 @@
     width: 100%;
     display: flex;
     justify-content: start;
+    height: auto;
 
     &--left {
       margin: 10px;
@@ -19,6 +20,10 @@
       grid-template-columns: 1fr 2fr;
       gap: 10px;
       max-height: 485px;
+    }
+
+    &--transaction {
+      margin: 10px 0;
     }
 
     &--footer {

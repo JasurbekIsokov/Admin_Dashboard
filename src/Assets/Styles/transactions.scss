@@ -5,12 +5,6 @@
   border-radius: 16px;
   border: 1px solid #e5e7eb;
 
-  &:hover {
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  }
-
   &__title {
     font-family: "Inter";
     font-style: normal;
@@ -40,7 +34,7 @@
       border-radius: 12px 12px 0 0;
       border-bottom: 1px solid #e5e7eb;
       background-color: #f3f4f6;
-      padding: 14px;
+      padding: 16px 14px;
 
       p {
         font-family: "Inter";
