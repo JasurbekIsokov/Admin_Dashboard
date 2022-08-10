@@ -1,6 +1,6 @@
 .products {
   padding: 1.5rem 1rem;
-  margin: 10px;
+  // margin: 10px;
   background-color: #fff;
   border-radius: 16px;
   border: 1px solid #e5e7eb;
@@ -34,24 +34,26 @@
 
         font-family: "Inter";
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 16px;
       }
 
       .email {
         color: #6b7280;
         font-size: 12px;
+        font-weight: 500;
       }
     }
 
     &--right {
       font-family: "Inter";
       font-style: normal;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 16px;
 
       span {
         color: #6b7280;
+        font-weight: 500;
       }
     }
   }

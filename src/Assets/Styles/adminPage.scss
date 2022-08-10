@@ -1,0 +1,27 @@
+.adminPage {
+  display: flex;
+  flex-direction: column;
+
+  &__section {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+
+    &--left {
+      margin: 10px;
+      width: 80%;
+      display: grid;
+      grid-template-columns: auto;
+    }
+
+    &--data {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 10px;
+      max-height: 485px;
+    }
+
+    &--footer {
+    }
+  }
+}
