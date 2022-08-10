@@ -1,31 +1,38 @@
 {
   "customers": [
     {
+      "id": "1",
       "name": "Neil Sims",
       "email": "email@example.com",
+      "img": "../Assets/Images/Avatar2.svg",
       "sum": "$367"
     },
     {
+      "id": "2",
       "name": "Bonnie Green",
       "email": "email@example.com",
       "sum": "$67"
     },
     {
+      "id": "3",
       "name": "Micheal Gough",
       "email": "email@example.com",
       "sum": "$3467"
     },
     {
+      "id": "4",
       "name": "Thomas Lean",
       "email": "email@example.com",
       "sum": "$2367"
     },
     {
+      "id": "5",
       "name": "Lana Byrd",
       "email": "email@example.com",
       "sum": "$367"
     },
     {
+      "id": "6",
       "name": "Karen Nelson",
       "email": "email@example.com",
       "sum": "$1367"

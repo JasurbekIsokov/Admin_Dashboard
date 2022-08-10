@@ -24,6 +24,26 @@
     justify-content: space-between;
     align-items: center;
 
+    .customerImage {
+      width: 33px;
+      height: 33px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .customer1Image {
+      background-image: url(../Images/Avatar.svg);
+    }
+
+    .customer2Image {
+      background-image: url(../Images/Avatar2.svg);
+    }
+
+    .customer3Image {
+      background-image: url(../Images/Avatar.svg);
+    }
+
     &--left {
       display: flex;
       justify-content: start;
@@ -50,5 +70,8 @@
       font-weight: 500;
       font-size: 16px;
     }
+  }
+  hr:last-child {
+    display: none;
   }
 }
