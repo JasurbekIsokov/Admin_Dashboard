@@ -4,16 +4,18 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Admin from "./Pages/Admin";
 import Team from "./Pages/Team";
-import Messaage from "./Pages/Messaage";
+import Message from "./Pages/Message";
 import Projects from "./Pages/Projects";
 import Calendar from "./Pages/Calendar";
 
 import "./Assets/Styles/chart.scss";
 import "./Assets/Styles/footer.scss";
 import "./Assets/Styles/sidebar.scss";
+import "./Assets/Styles/message.scss";
 import "./Assets/Styles/customer.scss";
 import "./Assets/Styles/products.scss";
 import "./Assets/Styles/homeHeader.scss";
+import "./Assets/Styles/getMessage.scss";
 import "./Assets/Styles/adminHeader.scss";
 import "./Assets/Styles/transactions.scss";
 import "./Assets/Styles/gamburgerHomeBtn.scss";
@@ -34,7 +36,7 @@ function App() {
         <Route path="/team" element={<Team />}></Route>
         <Route path="/projects" element={<Projects />}></Route>
         <Route path="/calendar" element={<Calendar />}></Route>
-        <Route path="/dashboard/message" element={<Messaage />}></Route>
+        <Route path="/login/message" element={<Message />}></Route>
       </Routes>
     </Router>
   );

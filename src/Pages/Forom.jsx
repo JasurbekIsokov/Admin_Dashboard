@@ -14,6 +14,19 @@ const Forom = () => {
     return date;
   };
 
+  const returDate = () => {
+    let date = new Date();
+    let year = date.getFullYear();
+    let month = date.getMonth();
+    let day = date.getDay();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+    let vaqt = `${hours}:${minutes}:${seconds} - ${day}/${month}/${year}`;
+
+    return vaqt;
+  };
+
   const submitForm = (e) => {
     e.preventDefault();
     postMessgae();
@@ -25,6 +38,7 @@ const Forom = () => {
       name: nameInputRef.current.value,
       phoneNumber: phoneInputRef.current.value,
       description: messageInputRef.current.value,
+      date: returDate(),
     };
 
     try {

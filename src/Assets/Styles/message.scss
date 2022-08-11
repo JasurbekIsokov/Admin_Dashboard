@@ -1,0 +1,139 @@
+.message {
+  display: flex;
+  flex-direction: column;
+
+  &__section {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    height: auto;
+
+    &--right {
+      margin: 10px;
+      width: 80%;
+      display: grid;
+      grid-template-columns: auto;
+    }
+
+    &--data {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      max-height: 550px;
+    }
+  }
+}
+
+// max-width: 1500px
+
+@media only screen and (min-width: 1500px) {
+  .message {
+    &__section {
+      width: 100%;
+      &--right {
+        width: 82%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .message {
+    &__section {
+      width: 100%;
+      &--right {
+        width: 84%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .message {
+    &__section {
+      width: 100%;
+      &--right {
+        width: 86%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .message {
+    &__section {
+      width: 100%;
+      &--right {
+        width: 88%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .message {
+    &__section {
+      width: 100%;
+      &--right {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .message {
+    &__section {
+      width: 100%;
+      &--right {
+        width: 91%;
+      }
+    }
+  }
+}
+
+// max-width: 1200px
+
+@media only screen and (max-width: 1200px) {
+  .message {
+    &__section {
+      &--data {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+
+// max-width: 992px
+
+@media only screen and (max-width: 992px) {
+  .message {
+    &__section {
+      &--data {
+        display: flex;
+        flex-direction: column;
+        max-height: 990px;
+      }
+    }
+  }
+}
+
+// max-width: 768px
+
+@media only screen and (max-width: 768px) {
+  .message {
+    &__section {
+      position: relative;
+      &--saidbar {
+        width: 100%;
+        z-index: 1000;
+        // height: 100%;
+        position: absolute;
+      }
+
+      &--right {
+        width: 100%;
+      }
+    }
+  }
+}
