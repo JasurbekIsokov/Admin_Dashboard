@@ -12,6 +12,25 @@ const Admin = () => {
   const [test, setTest] = useState("block");
   const [img, setImg] = useState(true);
 
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  const sidebarDisplay = () => {
+    if (windowSize <= 768) {
+      setTest("none");
+    } else if (windowSize >= 768) {
+      setTest("block");
+      console.log("katta");
+    }
+  };
+
+  useEffect(() => {
+    sidebarDisplay();
+  }, []);
+
+  useEffect(() => {
+    sidebarDisplay();
+  }, [windowSize]);
+
   const myFunction = () => {
     if (test === "block") {
       setTest("none");
@@ -21,6 +40,25 @@ const Admin = () => {
       setImg(false);
     }
   };
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
+  function getWindowSize() {
+    const { innerWidth, innerHeight } = window;
+    return innerWidth;
+  }
+
+  // console.log(windowSize);
 
   return (
     <div className="adminPage">
