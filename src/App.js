@@ -10,6 +10,7 @@ import Calendar from "./Pages/Calendar";
 
 import "./Assets/Styles/chart.scss";
 import "./Assets/Styles/footer.scss";
+import "./Assets/Styles/contact.scss";
 import "./Assets/Styles/sidebar.scss";
 import "./Assets/Styles/message.scss";
 import "./Assets/Styles/customer.scss";
