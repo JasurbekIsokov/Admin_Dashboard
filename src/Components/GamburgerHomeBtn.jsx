@@ -31,16 +31,16 @@ const GamburderHomeBtn = () => {
           <Link className="mobile__language--title" to="/">
             Dashboard
           </Link>
-          <Link className="mobile__language--title" to="/">
+          <Link className="mobile__language--title" to="/team">
             Team
           </Link>
-          <Link className="mobile__language--title" to="/">
+          <Link className="mobile__language--title" to="/projects">
             Projects
           </Link>
-          <Link className="mobile__language--title" to="/">
+          <Link className="mobile__language--title" to="/calendar">
             Calendar
           </Link>
-          <Link className="mobile__language--title" to="/">
+          <Link className="mobile__language--title" to="/login">
             Login
           </Link>
           <Link className="mobile__language--title" to="/">

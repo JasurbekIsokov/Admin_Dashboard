@@ -1,12 +1,13 @@
 import React from "react";
 import HomeHeader from "../Layouts/HomeHeader";
 
-const Home = () => {
+const Projects = () => {
   return (
-    <div className="homePage">
+    <div>
       <HomeHeader />
+      <h1>Projects Page</h1>
     </div>
   );
 };
 
-export default Home;
+export default Projects;

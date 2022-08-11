@@ -80,17 +80,33 @@
     ul {
       list-style: none;
       margin-left: 38px;
-      width: 100%;
+      width: 90%;
 
       li {
-        padding: 8px 12px;
-        border-radius: 12px;
+        padding: 8px;
+        border-radius: 12px 0 0 12px;
         width: 100%;
         margin-top: 10px;
         font-family: "Inter";
         font-style: normal;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 15px;
+        color: #111827;
+
+        .link {
+          text-decoration: none;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          color: #111827;
+          width: 100%;
+
+          &:hover {
+            background: #f3f4f6;
+            cursor: pointer;
+          }
+        }
 
         &:hover {
           background: #f3f4f6;

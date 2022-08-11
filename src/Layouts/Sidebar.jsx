@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import overview from "../Assets/Images/overview.svg";
 import pages from "../Assets/Images/pages.svg";
 import sales from "../Assets/Images/sales.svg";
@@ -85,10 +87,26 @@ const Sidebar = () => {
         </div>
 
         <ul style={{ display: display }}>
-          <li>Page-1</li>
-          <li>Page-1</li>
-          <li>Page-1</li>
-          <li>Page-1</li>
+          <li>
+            <Link className="link" to="/">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link className="link" to="/team">
+              Team
+            </Link>
+          </li>
+          <li>
+            <Link className="link" to="/projects">
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link className="link" to="/calendar">
+              Calendar
+            </Link>
+          </li>
         </ul>
       </div>
 

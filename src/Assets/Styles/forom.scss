@@ -1,0 +1,19 @@
+form {
+  display: grid;
+  grid-template-columns: auto;
+  width: 500px;
+  gap: 1rem;
+  margin: 1rem auto;
+
+  .inputs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  input,
+  textarea,
+  button {
+    padding: 1rem;
+    font-size: 16px;
+  }
+}

@@ -1,12 +1,13 @@
 import React from "react";
 import HomeHeader from "../Layouts/HomeHeader";
 
-const Home = () => {
+const Calendar = () => {
   return (
-    <div className="homePage">
+    <div>
       <HomeHeader />
+      <h1>Calendar</h1>
     </div>
   );
 };
 
-export default Home;
+export default Calendar;
