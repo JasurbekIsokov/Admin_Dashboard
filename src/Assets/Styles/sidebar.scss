@@ -164,3 +164,16 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    padding-bottom: 5rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .sidebar {
+    width: 100%;
+  }
+}
