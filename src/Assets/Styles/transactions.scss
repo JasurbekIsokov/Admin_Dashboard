@@ -100,3 +100,18 @@
     }
   }
 }
+
+// max-width: 1200px
+
+@media only screen and (max-width: 1200px) {
+  .transaction {
+    .table {
+      &__head {
+        grid-template-columns: 2.5fr 2fr 2fr 1.2fr;
+      }
+      &__row {
+        grid-template-columns: 2.5fr 2fr 2fr 1.2fr;
+      }
+    }
+  }
+}

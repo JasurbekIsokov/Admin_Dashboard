@@ -8,7 +8,7 @@
     justify-content: start;
     height: auto;
 
-    &--left {
+    &--right {
       margin: 10px;
       width: 80%;
       display: grid;
@@ -25,13 +25,90 @@
     &--transaction {
       margin: 10px 0;
     }
+  }
+}
 
-    &--footer {
+// max-width: 1500px
+
+@media only screen and (min-width: 1500px) {
+  .adminPage {
+    &__section {
+      width: 100%;
+      &--right {
+        width: 82%;
+      }
     }
   }
 }
 
-// max-width: 769px
+@media only screen and (min-width: 1600px) {
+  .adminPage {
+    &__section {
+      width: 100%;
+      &--right {
+        width: 84%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .adminPage {
+    &__section {
+      width: 100%;
+      &--right {
+        width: 86%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .adminPage {
+    &__section {
+      width: 100%;
+      &--right {
+        width: 88%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .adminPage {
+    &__section {
+      width: 100%;
+      &--right {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .adminPage {
+    &__section {
+      width: 100%;
+      &--right {
+        width: 91%;
+      }
+    }
+  }
+}
+
+// max-width: 1200px
+
+@media only screen and (max-width: 1200px) {
+  .adminPage {
+    &__section {
+      &--data {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+
+// max-width: 768px
 
 @media only screen and (max-width: 768px) {
   .adminPage {

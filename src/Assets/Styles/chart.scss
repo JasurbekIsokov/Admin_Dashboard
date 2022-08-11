@@ -23,9 +23,19 @@
 }
 
 .g2-tooltip-marker {
-  background-color: #03743f !important;
+  // background-color: #03743f !important;
 }
 
 .g2-tooltip-value {
   margin-left: 20px !important;
+}
+
+canvas {
+  width: 100% !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  canvas {
+    height: 300px !important;
+  }
 }
