@@ -29,7 +29,7 @@ const Admin = () => {
         <div className="adminPage__section--saidbar" style={{ display: test }}>
           <Sidebar />
         </div>
-        {/* <div className="adminPage__section--left">
+        <div className="adminPage__section--left">
           <div className="adminPage__section--chart">
             <p className="adminPage__section--chart-title">
               Sales <span>!</span>
@@ -46,7 +46,7 @@ const Admin = () => {
           <div className="adminPage__section--footer">
             <Footer />
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );
