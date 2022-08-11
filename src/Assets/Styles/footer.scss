@@ -36,9 +36,26 @@
     justify-content: start;
     text-align: left;
     align-items: flex-start;
+    padding: 1.5rem 1rem;
 
     &__left {
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__right {
+      img {
+        margin: 0 1.5rem 0 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .footer {
+    padding: 1.5rem 1rem;
+
+    &__left {
+      margin-bottom: 0.5rem;
     }
 
     &__right {

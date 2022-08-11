@@ -108,6 +108,20 @@
   }
 }
 
+// max-width: 992px
+
+@media only screen and (max-width: 992px) {
+  .adminPage {
+    &__section {
+      &--data {
+        display: flex;
+        flex-direction: column;
+        max-height: 990px;
+      }
+    }
+  }
+}
+
 // max-width: 768px
 
 @media only screen and (max-width: 768px) {
@@ -118,6 +132,10 @@
         z-index: 1000;
         height: 100%;
         position: absolute;
+      }
+
+      &--right {
+        width: 100%;
       }
     }
   }

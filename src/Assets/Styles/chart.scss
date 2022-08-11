@@ -39,3 +39,15 @@ canvas {
     height: 300px !important;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  canvas {
+    height: 280px !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  canvas {
+    height: 200px !important;
+  }
+}
