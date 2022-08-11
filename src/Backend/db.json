@@ -78,88 +78,32 @@
   ],
   "message": [
     {
-      "id": 1660203837316,
-      "name": "Jasur",
-      "phoneNumber": "123456789",
-      "description": "We initialized a state variable called windowSize that tracks changes to the width and height of the window object.\n\nThe innerWidth property returns the interior width of the window in pixels. This includes the width of the vertical scroll bar (if one is present).\n\nThe innerHeight property returns the interior height of the window in pixels, including the height of the horizontal scroll bar (if present).\n\nWe passed an empty dependencies array to the useEffect hook because we only want to add an event listener for the resize event once - on the initial rende",
-      "date": "12:43:57 - 4/7/2022"
+      "id": 1660238960116,
+      "name": "Jasurbek ",
+      "phoneNumber": "998941112233",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, eligendi? Possimus earum saepe ipsum. Corporis excepturi quos necessitatibus animi provident!\n",
+      "date": "22:29:20 - 4/7/2022"
     },
     {
-      "id": 1660203837943,
-      "name": "Jasur",
-      "phoneNumber": "123456789",
-      "description": "We initialized a state variable called windowSize that tracks changes to the width and height of the window object.\n\nThe innerWidth property returns the interior width of the window in pixels. This includes the width of the vertical scroll bar (if one is present).\n\nThe innerHeight property returns the interior height of the window in pixels, including the height of the horizontal scroll bar (if present).\n\nWe passed an empty dependencies array to the useEffect hook because we only want to add an event listener for the resize event once - on the initial rende",
-      "date": "12:43:57 - 4/7/2022"
+      "id": 1660238978480,
+      "name": "Ulugbek ",
+      "phoneNumber": "998942223344",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, eligendi? Possimus earum saepe ipsum. Corporis excepturi quos necessitatibus animi provident!\nLorem ipsum dolor sit amet consectetur adipisicing elit. Sed, eligendi? Possimus earum saepe ipsum. Corporis excepturi quos necessitatibus animi provident!\n",
+      "date": "22:29:38 - 4/7/2022"
     },
     {
-      "id": 1660203838331,
-      "name": "Jasur",
-      "phoneNumber": "123456789",
-      "description": "We initialized a state variable called windowSize that tracks changes to the width and height of the window object.\n\nThe innerWidth property returns the interior width of the window in pixels. This includes the width of the vertical scroll bar (if one is present).\n\nThe innerHeight property returns the interior height of the window in pixels, including the height of the horizontal scroll bar (if present).\n\nWe passed an empty dependencies array to the useEffect hook because we only want to add an event listener for the resize event once - on the initial rende",
-      "date": "12:43:58 - 4/7/2022"
+      "id": 1660239015300,
+      "name": "Falonchi",
+      "phoneNumber": "998944445566",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, eligendi? Possimus earum saepe ipsum. Corporis excepturi quos necessitatibus animi provident!\nLorem ipsum dolor sit amet consectetur adipisicing elit. Sed, eligendi? Possimus earum saepe ipsum. ",
+      "date": "22:30:15 - 4/7/2022"
     },
     {
-      "id": 1660203838709,
-      "name": "Jasur",
-      "phoneNumber": "123456789",
-      "description": "We initialized a state variable called windowSize that tracks changes to the width and height of the window object.\n\nThe innerWidth property returns the interior width of the window in pixels. This includes the width of the vertical scroll bar (if one is present).\n\nThe innerHeight property returns the interior height of the window in pixels, including the height of the horizontal scroll bar (if present).\n\nWe passed an empty dependencies array to the useEffect hook because we only want to add an event listener for the resize event once - on the initial rende",
-      "date": "12:43:58 - 4/7/2022"
-    },
-    {
-      "id": 1660203839026,
-      "name": "Jasur",
-      "phoneNumber": "123456789",
-      "description": "We initialized a state variable called windowSize that tracks changes to the width and height of the window object.\n\nThe innerWidth property returns the interior width of the window in pixels. This includes the width of the vertical scroll bar (if one is present).\n\nThe innerHeight property returns the interior height of the window in pixels, including the height of the horizontal scroll bar (if present).\n\nWe passed an empty dependencies array to the useEffect hook because we only want to add an event listener for the resize event once - on the initial rende",
-      "date": "12:43:59 - 4/7/2022"
-    },
-    {
-      "id": 1660203839331,
-      "name": "Jasur",
-      "phoneNumber": "123456789",
-      "description": "We initialized a state variable called windowSize that tracks changes to the width and height of the window object.\n\nThe innerWidth property returns the interior width of the window in pixels. This includes the width of the vertical scroll bar (if one is present).\n\nThe innerHeight property returns the interior height of the window in pixels, including the height of the horizontal scroll bar (if present).\n\nWe passed an empty dependencies array to the useEffect hook because we only want to add an event listener for the resize event once - on the initial rende",
-      "date": "12:43:59 - 4/7/2022"
-    },
-    {
-      "id": 1660203839635,
-      "name": "Jasur",
-      "phoneNumber": "123456789",
-      "description": "We initialized a state variable called windowSize that tracks changes to the width and height of the window object.\n\nThe innerWidth property returns the interior width of the window in pixels. This includes the width of the vertical scroll bar (if one is present).\n\nThe innerHeight property returns the interior height of the window in pixels, including the height of the horizontal scroll bar (if present).\n\nWe passed an empty dependencies array to the useEffect hook because we only want to add an event listener for the resize event once - on the initial rende",
-      "date": "12:43:59 - 4/7/2022"
-    },
-    {
-      "id": 1660203839962,
-      "name": "Jasur",
-      "phoneNumber": "123456789",
-      "description": "We initialized a state variable called windowSize that tracks changes to the width and height of the window object.\n\nThe innerWidth property returns the interior width of the window in pixels. This includes the width of the vertical scroll bar (if one is present).\n\nThe innerHeight property returns the interior height of the window in pixels, including the height of the horizontal scroll bar (if present).\n\nWe passed an empty dependencies array to the useEffect hook because we only want to add an event listener for the resize event once - on the initial rende",
-      "date": "12:43:59 - 4/7/2022"
-    },
-    {
-      "id": 1660203840246,
-      "name": "Jasur",
-      "phoneNumber": "123456789",
-      "description": "We initialized a state variable called windowSize that tracks changes to the width and height of the window object.\n\nThe innerWidth property returns the interior width of the window in pixels. This includes the width of the vertical scroll bar (if one is present).\n\nThe innerHeight property returns the interior height of the window in pixels, including the height of the horizontal scroll bar (if present).\n\nWe passed an empty dependencies array to the useEffect hook because we only want to add an event listener for the resize event once - on the initial rende",
-      "date": "12:44:0 - 4/7/2022"
-    },
-    {
-      "id": 1660203840508,
-      "name": "Jasur",
-      "phoneNumber": "123456789",
-      "description": "We initialized a state variable called windowSize that tracks changes to the width and height of the window object.\n\nThe innerWidth property returns the interior width of the window in pixels. This includes the width of the vertical scroll bar (if one is present).\n\nThe innerHeight property returns the interior height of the window in pixels, including the height of the horizontal scroll bar (if present).\n\nWe passed an empty dependencies array to the useEffect hook because we only want to add an event listener for the resize event once - on the initial rende",
-      "date": "12:44:0 - 4/7/2022"
-    },
-    {
-      "id": 1660233517769,
-      "name": "Jasurbek Isoqov",
-      "phoneNumber": "998943435561",
-      "description": "Yangi comment ",
-      "date": "20:58:37 - 4/7/2022"
-    },
-    {
-      "id": 1660233575466,
-      "name": "Ulugbek",
-      "phoneNumber": "12312312312",
-      "description": "Assalomu alaykum\n",
-      "date": "20:59:35 - 4/7/2022"
+      "id": 1660239037973,
+      "name": "Pistonchi",
+      "phoneNumber": "9989466677888",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, eligendi? Possimus earum saepe ipsum. Corporis excepturi quos necessitatibus animi provident!\nLorem ipsum dolor sit amet consectetur adipisicing elit. Sed, eligendi? Possimus earum saepe ipsum. Corporis excepturi quos necessitatibus animi provident!\nLorem ipsum dolor sit amet consectetur adipisicing elit. Sed, eligendi? Possimus earum saepe ipsum. Corporis excepturi quos necessitatibus animi provident!\n",
+      "date": "22:30:37 - 4/7/2022"
     }
   ]
 }
