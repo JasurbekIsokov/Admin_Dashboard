@@ -22,9 +22,9 @@
   }
 }
 
-.g2-tooltip-marker {
-  // background-color: #03743f !important;
-}
+// .g2-tooltip-marker {
+// background-color: #03743f !important;
+// }
 
 .g2-tooltip-value {
   margin-left: 20px !important;
@@ -49,5 +49,26 @@ canvas {
 @media only screen and (max-width: 576px) {
   canvas {
     height: 200px !important;
+  }
+
+  .adminPage__section--chart {
+    padding: 1rem;
+  }
+
+  .adminPage__section--chart-title {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 1rem;
+
+    span {
+      font-size: 12px;
+      padding: 0px 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  canvas {
+    height: 180px !important;
   }
 }
