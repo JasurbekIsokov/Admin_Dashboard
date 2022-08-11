@@ -66,6 +66,7 @@ const Forom = () => {
             id="name"
             placeholder="Enter name"
             ref={nameInputRef}
+            required
           />
         </div>
         <div className="form__phone">
@@ -78,6 +79,7 @@ const Forom = () => {
             id="phoneNumber"
             placeholder="Enter phone number"
             ref={phoneInputRef}
+            required
           />
         </div>
 
@@ -88,9 +90,10 @@ const Forom = () => {
           <textarea
             name="description"
             id="description"
-            cols="30"
+            cols="10"
             rows="10"
             ref={messageInputRef}
+            required
             placeholder="Your Comment..."
           ></textarea>
         </div>
