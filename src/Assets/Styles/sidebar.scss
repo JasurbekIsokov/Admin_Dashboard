@@ -117,6 +117,30 @@
         }
       }
     }
+
+    .message {
+      border-radius: 12px 0 0 12px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      color: #111827;
+
+      .link {
+        text-decoration: none;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        color: #111827;
+        width: 145px;
+      }
+
+      &:hover {
+        background: #f3f4f6;
+        cursor: pointer;
+      }
+    }
   }
 
   .aylan {

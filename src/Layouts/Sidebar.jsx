@@ -135,7 +135,11 @@ const Sidebar = () => {
         <div className="sidebar__fixRow--top">
           <div className="sidebar__fixRow--top-left">
             <img src={message} alt="pages" />
-            <p>Message</p>
+            <p className="message">
+              <Link className="link" to="/login/message">
+                Message
+              </Link>
+            </p>
           </div>
 
           <p className="message__sum">1</p>
