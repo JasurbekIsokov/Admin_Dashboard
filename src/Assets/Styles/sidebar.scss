@@ -85,7 +85,7 @@
       li {
         padding: 8px;
         border-radius: 12px 0 0 12px;
-        width: 100%;
+        // width: 100%;
         margin-top: 10px;
         font-family: "Inter";
         font-style: normal;
@@ -100,7 +100,8 @@
           font-weight: 500;
           font-size: 15px;
           color: #111827;
-          width: 100%;
+          width: 200px;
+          padding-right: 130px;
 
           &:hover {
             background: #f3f4f6;
@@ -186,48 +187,3 @@
     }
   }
 }
-
-// import {useEffect, useState} from 'react';
-
-// export default function App() {
-//   const [windowSize, setWindowSize] = useState(getWindowSize());
-
-//   useEffect(() => {
-//     function handleWindowResize() {
-//       setWindowSize(getWindowSize());
-//     }
-
-//     window.addEventListener('resize', handleWindowResize);
-
-//     return () => {
-//       window.removeEventListener('resize', handleWindowResize);
-//     };
-//   }, []);
-
-//   return (
-//     <div>
-//       <h2>Width: {windowSize.innerWidth}</h2>
-
-//       <h2>Height: {windowSize.innerHeight}</h2>
-//     </div>
-//   );
-// }
-
-// function getWindowSize() {
-//   const {innerWidth, innerHeight} = window;
-//   return {innerWidth, innerHeight};
-// }
-
-//
-
-// useEffect(() => {
-//   function handleWindowResize() {
-//     setWindowSize(getWindowSize());
-//   }
-
-//   window.addEventListener('resize', handleWindowResize);
-
-//   return () => {
-//     window.removeEventListener('resize', handleWindowResize);
-//   };
-// }, []);

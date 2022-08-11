@@ -15,12 +15,7 @@ const Admin = () => {
   const [windowSize, setWindowSize] = useState(getWindowSize());
 
   const sidebarDisplay = () => {
-    if (windowSize <= 768) {
-      setTest("none");
-    } else if (windowSize >= 768) {
-      setTest("block");
-      console.log("katta");
-    }
+    windowSize <= 768 ? setTest("none") : setTest("block");
   };
 
   useEffect(() => {
