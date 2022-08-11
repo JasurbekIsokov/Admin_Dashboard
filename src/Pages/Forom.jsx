@@ -28,7 +28,7 @@ const Forom = () => {
   };
 
   const submitForm = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     postMessgae();
   };
 

@@ -21,8 +21,8 @@ const GetMessage = () => {
   return (
     <div className="getMessage">
       <p className="getMessage__title">Message</p>
-
-      {messages.map((message) => {
+      {console.log(messages.reverse())}
+      {messages.reverse().map((message) => {
         const { id, name, phoneNumber, description, date } = message;
 
         return (
