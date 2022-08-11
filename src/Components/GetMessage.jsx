@@ -7,7 +7,7 @@ const GetMessage = () => {
   const getMessages = async () => {
     try {
       axios.get("http://localhost:3004/message").then((responce) => {
-        getMessage(responce.data);
+        getMessage(responce.data.reverse());
       });
     } catch (error) {
       console.log(error.message);
@@ -21,7 +21,7 @@ const GetMessage = () => {
   return (
     <div className="getMessage">
       <p className="getMessage__title">Message</p>
-      {console.log(messages.reverse())}
+      {/* {console.log(messages.reverse())} */}
       {messages.reverse().map((message) => {
         const { id, name, phoneNumber, description, date } = message;
 
