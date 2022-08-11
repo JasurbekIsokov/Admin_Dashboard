@@ -92,3 +92,28 @@
     display: none;
   }
 }
+
+@media only screen and (max-width: 576px) {
+  .customers {
+    &__title {
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    &__box {
+      &--left {
+        p {
+          margin-left: 0.5rem;
+          font-weight: 500;
+        }
+
+        .email {
+          font-weight: 400;
+        }
+      }
+      &--right {
+        font-weight: 500;
+      }
+    }
+  }
+}
