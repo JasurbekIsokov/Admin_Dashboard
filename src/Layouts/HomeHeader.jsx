@@ -67,6 +67,19 @@ const HomeHeader = () => {
                 Calendar
               </Link>
             </li>
+            <li>
+              <Link
+                className="link"
+                to="/contact-us"
+                style={
+                  loc.pathname == "/contact-us"
+                    ? { color: "#1C64F2" }
+                    : { color: "6B7280" }
+                }
+              >
+                Contact Us
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>

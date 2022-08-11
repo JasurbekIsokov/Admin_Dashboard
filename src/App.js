@@ -26,6 +26,7 @@ import "./Assets/Styles/homePage.scss";
 import "./Assets/Styles/adminPage.scss";
 
 import "./Assets/Styles/index.scss";
+import Contact from "./Pages/Contact";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path="/projects" element={<Projects />}></Route>
         <Route path="/calendar" element={<Calendar />}></Route>
         <Route path="/login/message" element={<Message />}></Route>
+        <Route path="/contact-us" element={<Contact />}></Route>
       </Routes>
     </Router>
   );

@@ -54,30 +54,46 @@ const Forom = () => {
 
   return (
     <div>
-      <form onSubmit={submitForm} ref={formRef}>
-        <div className="inputs">
+      <form onSubmit={submitForm} ref={formRef} className="form">
+        <p className="form__title">Contact Us</p>
+        <div className="form__name">
+          <label htmlFor="name" className="formLabel">
+            Name:
+          </label>
           <input
             type="text"
             name="name"
             id="name"
-            placeholder="name"
+            placeholder="Enter name"
             ref={nameInputRef}
           />
+        </div>
+        <div className="form__phone">
+          <label htmlFor="phone" className="formLabel">
+            Phone:
+          </label>
           <input
             type="number"
             name="phoneNumber"
             id="phoneNumber"
-            placeholder="Phone number"
+            placeholder="Enter phone number"
             ref={phoneInputRef}
           />
         </div>
-        <textarea
-          name="description"
-          id="description"
-          cols="30"
-          rows="10"
-          ref={messageInputRef}
-        ></textarea>
+
+        <div className="form__comment">
+          <label htmlFor="description" className="formLabel">
+            Message:
+          </label>
+          <textarea
+            name="description"
+            id="description"
+            cols="30"
+            rows="10"
+            ref={messageInputRef}
+            placeholder="Your Comment..."
+          ></textarea>
+        </div>
         <button type="submit">Submit</button>
       </form>
     </div>
