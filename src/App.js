@@ -16,6 +16,7 @@ import "./Assets/Styles/message.scss";
 import "./Assets/Styles/customer.scss";
 import "./Assets/Styles/products.scss";
 import "./Assets/Styles/homeHeader.scss";
+import "./Assets/Styles/loginIndex.scss";
 import "./Assets/Styles/getMessage.scss";
 import "./Assets/Styles/adminHeader.scss";
 import "./Assets/Styles/transactions.scss";
@@ -28,6 +29,8 @@ import "./Assets/Styles/adminPage.scss";
 
 import "./Assets/Styles/index.scss";
 import Contact from "./Pages/Contact";
+import SignIn from "./Pages/Login";
+import SignUn from "./Pages/Register";
 
 function App() {
   return (
@@ -40,6 +43,8 @@ function App() {
         <Route path="/calendar" element={<Calendar />}></Route>
         <Route path="/login/message" element={<Message />}></Route>
         <Route path="/contact-us" element={<Contact />}></Route>
+        <Route path="/sign-in" element={<SignIn />}></Route>
+        <Route path="/sign-up" element={<SignUn />}></Route>
       </Routes>
     </Router>
   );
