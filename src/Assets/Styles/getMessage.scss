@@ -6,6 +6,7 @@
 .getMessage {
   padding: 1.5rem 1rem;
   height: 550px;
+  margin-right: 5px;
 
   background-color: #fff;
   border-radius: 16px;
@@ -115,6 +116,7 @@
 .getReadMessage {
   padding: 1.5rem 1rem;
   height: 550px;
+  margin-left: 5px;
 
   background-color: #fff;
   border-radius: 16px;
@@ -216,6 +218,116 @@
       .noDelete {
         color: #03543f;
         background: #def7ec;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .messagePage__section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .getMessage {
+    margin: 0;
+  }
+
+  .getReadMessage {
+    margin: 0;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .getMessage {
+    &__title {
+      font-size: 18px;
+    }
+
+    &__box {
+      &--name {
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 0.5rem;
+
+        span {
+          font-size: 18px;
+        }
+      }
+
+      &--head {
+        p {
+          font-weight: 500;
+          font-size: 16px;
+
+          span {
+            font-size: 16px;
+          }
+        }
+      }
+
+      &--head-date {
+        font-size: 14px !important;
+        span {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+
+  .getReadMessage {
+    &__title {
+      font-size: 18px;
+    }
+
+    &__box {
+      &--name {
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 0.5rem;
+
+        span {
+          font-size: 18px;
+        }
+      }
+
+      &--head {
+        p {
+          font-weight: 500;
+          font-size: 16px;
+
+          span {
+            font-size: 16px;
+          }
+        }
+      }
+
+      &--head-date {
+        font-size: 14px !important;
+        span {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .getMessage {
+    &__box {
+      &--head {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .getReadMessage {
+    &__box {
+      &--head {
+        display: flex;
+        flex-direction: column;
       }
     }
   }

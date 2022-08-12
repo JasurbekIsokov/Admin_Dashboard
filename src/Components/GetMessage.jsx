@@ -96,9 +96,9 @@ const GetMessage = () => {
   return (
     <div className="messagePage__section">
       <div className="getMessage">
-        <p className="getMessage__title">New Message</p>
+        <p className="getMessage__title">New Messages</p>
         {messages.length === 0 ? (
-          <p className="getMessage__pustoyTitle ">Hozircha habarlar yo'q</p>
+          <p className="getMessage__pustoyTitle ">No messages</p>
         ) : (
           messages.reverse().map((message) => {
             const { id, name, phoneNumber, description, date } = message;
@@ -133,7 +133,7 @@ const GetMessage = () => {
                       value={id}
                       onClick={(e) => readOnClick(e.target.value)}
                     >
-                      O'qilganga qo'shish
+                      Add to read
                     </button>
                   </div>
                 </div>
@@ -145,10 +145,10 @@ const GetMessage = () => {
       </div>
 
       <div className="getReadMessage">
-        <p className="getReadMessage__title">Read Message</p>
+        <p className="getReadMessage__title">List of read messages</p>
         {readMessages.length === 0 ? (
           <p className="getReadMessage__pustoyTitle">
-            Hozircha o'qilgan habarlarda malumot yo'q
+            There are no messages in the read list
           </p>
         ) : (
           readMessages.reverse().map((message) => {
