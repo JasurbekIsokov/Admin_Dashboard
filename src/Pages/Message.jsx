@@ -62,7 +62,6 @@ const Message = () => {
         <div className="message__section--right">
           <div className="message__section--data">
             <GetMessage />
-            <Products />
           </div>
 
           <div className="message__section--footer">

@@ -78,32 +78,27 @@
   ],
   "message": [
     {
-      "id": 1660238960116,
-      "name": "Jasurbek ",
-      "phoneNumber": "998941112233",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, eligendi? Possimus earum saepe ipsum. Corporis excepturi quos necessitatibus animi provident!\n",
-      "date": "22:29:20 - 4/7/2022"
+      "id": 1660320592543,
+      "name": "Isoqov Jasurbek Jumanazar o'g'li",
+      "phoneNumber": "1231",
+      "description": "eqweqwe",
+      "date": "21:9:52 - 5/7/2022"
+    }
+  ],
+  "readMessage": [
+    {
+      "id": 1660320618170,
+      "name": "Ulugbek",
+      "phoneNumber": "2312312",
+      "description": "3123131212131",
+      "date": "21:10:18 - 5/7/2022"
     },
     {
-      "id": 1660238978480,
-      "name": "Ulugbek ",
-      "phoneNumber": "998942223344",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, eligendi? Possimus earum saepe ipsum. Corporis excepturi quos necessitatibus animi provident!\nLorem ipsum dolor sit amet consectetur adipisicing elit. Sed, eligendi? Possimus earum saepe ipsum. Corporis excepturi quos necessitatibus animi provident!\n",
-      "date": "22:29:38 - 4/7/2022"
-    },
-    {
-      "id": 1660239015300,
-      "name": "Falonchi",
-      "phoneNumber": "998944445566",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, eligendi? Possimus earum saepe ipsum. Corporis excepturi quos necessitatibus animi provident!\nLorem ipsum dolor sit amet consectetur adipisicing elit. Sed, eligendi? Possimus earum saepe ipsum. ",
-      "date": "22:30:15 - 4/7/2022"
-    },
-    {
-      "id": 1660239037973,
-      "name": "Pistonchi",
-      "phoneNumber": "9989466677888",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, eligendi? Possimus earum saepe ipsum. Corporis excepturi quos necessitatibus animi provident!\nLorem ipsum dolor sit amet consectetur adipisicing elit. Sed, eligendi? Possimus earum saepe ipsum. Corporis excepturi quos necessitatibus animi provident!\nLorem ipsum dolor sit amet consectetur adipisicing elit. Sed, eligendi? Possimus earum saepe ipsum. Corporis excepturi quos necessitatibus animi provident!\n",
-      "date": "22:30:37 - 4/7/2022"
+      "id": 1660320609623,
+      "name": "Isoqov Jasurbek Jumanazar o'g'li",
+      "phoneNumber": "123123123",
+      "description": "1231231231312",
+      "date": "21:10:9 - 5/7/2022"
     }
   ]
 }
