@@ -1,16 +1,16 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-// import {
-//   getAuth,
-//   createUserWithEmailAndPassword,
-//   updateProfile,
-// } from "firebase/auth";
-// import { db } from "../firebace.config";
-// import { setDoc, doc, serverTimestamp } from "firebase/firestore";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  updateProfile,
+} from "firebase/auth";
+import { db } from "../firebace.config";
+import { setDoc, doc, serverTimestamp } from "firebase/firestore";
 
-// import { toast } from "react-toastify";
+import { toast } from "react-toastify";
 
-// import OAuth from "../Components/OAuth";
+import OAuth from "../Components/OAuth";
 import { ReactComponent as ArrowRightIcon } from "../Assets/Images/keyboardArrowRightIcon.svg";
 import visibilityIcon from "../Assets/Images/visibilityIcon.svg";
 import HomeHeader from "../Layouts/HomeHeader";
@@ -37,31 +37,31 @@ const SignUn = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
 
-    // try {
-    //   const auth = getAuth();
+    try {
+      const auth = getAuth();
 
-    //   const userCredential = await createUserWithEmailAndPassword(
-    //     auth,
-    //     email,
-    //     password
-    //   );
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
 
-    //   const user = userCredential.user;
+      const user = userCredential.user;
 
-    //   updateProfile(auth.currentUser, {
-    //     displayName: name,
-    //   });
+      updateProfile(auth.currentUser, {
+        displayName: name,
+      });
 
-    //   const formDataCopy = { ...formData };
-    //   delete formDataCopy.password;
-    //   formDataCopy.timestamp = serverTimestamp();
+      const formDataCopy = { ...formData };
+      delete formDataCopy.password;
+      formDataCopy.timestamp = serverTimestamp();
 
-    //   await setDoc(doc(db, "users", user.uid), formDataCopy);
+      await setDoc(doc(db, "users", user.uid), formDataCopy);
 
-    //   navigate("/");
-    // } catch (error) {
-    //   toast.error("Something went wrong with registration");
-    // }
+      navigate("/");
+    } catch (error) {
+      toast.error("Something went wrong with registration");
+    }
   };
 
   return (
@@ -106,7 +106,7 @@ const SignUn = () => {
             />
           </div>
 
-          <Link className="forgotPasswordLink" to="/">
+          <Link className="forgotPasswordLink" to="/forgot-password">
             Forgot Password
           </Link>
 
@@ -118,10 +118,10 @@ const SignUn = () => {
           </div>
         </form>
 
-        {/* <OAuth /> */}
+        <OAuth />
 
-        <Link to="/" className="registerLink">
-          Sign In Instead
+        <Link to="/sign-in" className="registerLink">
+          Sign Ip Instead
         </Link>
       </div>
     </>

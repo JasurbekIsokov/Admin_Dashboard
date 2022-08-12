@@ -4,7 +4,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { toast } from "react-toastify";
 
-// import OAuth from "../Components/OAuth";
+import OAuth from "../Components/OAuth";
 import { ReactComponent as ArrowRightIcon } from "../Assets/Images/keyboardArrowRightIcon.svg";
 import visibilityIcon from "../Assets/Images/visibilityIcon.svg";
 import HomeHeader from "../Layouts/HomeHeader";
@@ -28,20 +28,20 @@ const SignIn = () => {
   };
 
   const onSubmit = async (e) => {
-    //   e.preventDefault();
-    //   try {
-    //     const auth = getAuth();
-    //     const userCredential = await signInWithEmailAndPassword(
-    //       auth,
-    //       email,
-    //       password
-    //     );
-    //     if (userCredential.user) {
-    //       navigate("/");
-    //     }
-    //   } catch (error) {
-    //     toast.error("Bad User Creadentials");
-    //   }
+    e.preventDefault();
+    try {
+      const auth = getAuth();
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      if (userCredential.user) {
+        navigate("/profile");
+      }
+    } catch (error) {
+      toast.error("Bad User Creadentials");
+    }
   };
 
   return (
@@ -89,7 +89,7 @@ const SignIn = () => {
           </div>
         </form>
 
-        {/* <OAuth /> */}
+        <OAuth />
 
         <Link to="/" className="registerLink">
           Sign Up Instead

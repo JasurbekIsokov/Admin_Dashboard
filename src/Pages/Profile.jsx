@@ -1,18 +1,18 @@
 import { useEffect, useState } from "react";
-// import { getAuth, updateProfile } from "firebase/auth";
-// import { updateDoc, doc } from "firebase/firestore";
-// import { db } from "../firebace.config";
+import { getAuth, updateProfile } from "firebase/auth";
+import { updateDoc, doc } from "firebase/firestore";
+import { db } from "../firebace.config";
 import { useNavigate, Link } from "react-router-dom";
-// import { toast } from "react-toastify";
+import { toast } from "react-toastify";
 import HomeHeader from "../Layouts/HomeHeader";
 
 const Profile = () => {
   //Autentification qiluvchi function
-  // const auth = getAuth();
+  const auth = getAuth();
   const [changeDetails, setChangeDetails] = useState(false);
   const [formData, setFormData] = useState({
-    // name: auth.currentUser.displayName,
-    // email: auth.currentUser.email,
+    name: auth.currentUser.displayName,
+    email: auth.currentUser.email,
   });
 
   const { name, email } = formData;
@@ -20,27 +20,27 @@ const Profile = () => {
   const navigate = useNavigate();
 
   const onLogout = () => {
-    // auth.signOut();
+    auth.signOut();
     navigate("/");
   };
 
   // Change degan yozuv bosilganda
   const onSubmit = async () => {
-    // try {
-    //   if (auth.currentUser.displayName !== name) {
-    //     // Update display name in fb
-    //     await updateProfile(auth.currentUser, {
-    //       displayName: name,
-    //     });
-    //     // Update in firestore
-    //     const userRef = doc(db, "users", auth.currentUser.uid);
-    //     await updateDoc(userRef, {
-    //       name,
-    //     });
-    //   }
-    // } catch (error) {
-    //   toast.error("Could not update profile details");
-    // }
+    try {
+      if (auth.currentUser.displayName !== name) {
+        // Update display name in fb
+        await updateProfile(auth.currentUser, {
+          displayName: name,
+        });
+        // Update in firestore
+        const userRef = doc(db, "users", auth.currentUser.uid);
+        await updateDoc(userRef, {
+          name,
+        });
+      }
+    } catch (error) {
+      toast.error("Could not update profile details");
+    }
   };
 
   const onChange = (e) => {
