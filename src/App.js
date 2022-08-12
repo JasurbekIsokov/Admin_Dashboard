@@ -32,6 +32,7 @@ import Contact from "./Pages/Contact";
 import SignIn from "./Pages/Login";
 import SignUn from "./Pages/Register";
 import ForgotPassword from "./Pages/ForgotPassword";
+import Profile from "./Pages/Profile";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
         <Route path="/sign-in" element={<SignIn />}></Route>
         <Route path="/sign-up" element={<SignUn />}></Route>
         <Route path="/forgot-password" element={<ForgotPassword />}></Route>
+        <Route path="/profile" element={<Profile />}></Route>
       </Routes>
     </Router>
   );
