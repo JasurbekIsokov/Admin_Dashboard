@@ -1,9 +1,9 @@
-// import { useLocation, useNavigate } from "react-router-dom";
-// import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-// import { doc, setDoc, getDoc, serverTimestamp } from "firebase/firestore";
-// import { db } from "../firebace.config";
-// import { toast } from "react-toastify";
-// import googleIcon from "../assets/svg/googleIcon.svg";
+import { useLocation, useNavigate } from "react-router-dom";
+import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { doc, setDoc, getDoc, serverTimestamp } from "firebase/firestore";
+import { db } from "../firebace.config";
+import { toast } from "react-toastify";
+import googleIcon from "../Assets/Images/googleIcon.svg";
 
 // const OAuth = () => {
 //   const navigate = useNavigate();

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 
-// import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-// import { toast } from "react-toastify";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { toast } from "react-toastify";
 
 // import OAuth from "../Components/OAuth";
 import { ReactComponent as ArrowRightIcon } from "../Assets/Images/keyboardArrowRightIcon.svg";
