@@ -31,6 +31,7 @@ import "./Assets/Styles/index.scss";
 import Contact from "./Pages/Contact";
 import SignIn from "./Pages/Login";
 import SignUn from "./Pages/Register";
+import ForgotPassword from "./Pages/ForgotPassword";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         <Route path="/contact-us" element={<Contact />}></Route>
         <Route path="/sign-in" element={<SignIn />}></Route>
         <Route path="/sign-up" element={<SignUn />}></Route>
+        <Route path="/forgot-password" element={<ForgotPassword />}></Route>
       </Routes>
     </Router>
   );
