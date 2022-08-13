@@ -136,7 +136,7 @@ const Sidebar = () => {
           <div className="sidebar__fixRow--top-left">
             <img src={message} alt="pages" />
             <p className="message">
-              <Link className="link" to="/login/message">
+              <Link className="link" to="/admin/message">
                 Message
               </Link>
             </p>

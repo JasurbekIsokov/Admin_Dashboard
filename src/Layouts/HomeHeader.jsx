@@ -7,7 +7,7 @@ import GamburderHomeBtn from "../Components/GamburgerHomeBtn";
 
 const HomeHeader = () => {
   const loc = useLocation();
-  console.log(loc.pathname);
+  // console.log(loc.pathname);
 
   return (
     <header className="header">
@@ -85,11 +85,27 @@ const HomeHeader = () => {
       </div>
       <div className="header__right">
         <img src={login} alt="login" />
-        <Link className="link" to="/login">
+        <Link
+          className="link"
+          to="/sign-in"
+          style={
+            loc.pathname == "/sign-in"
+              ? { color: "#1C64F2" }
+              : { color: "6B7280" }
+          }
+        >
           Login
         </Link>
         <p>/</p>
-        <Link className="link" to="/">
+        <Link
+          className="link"
+          to="/sign-up"
+          style={
+            loc.pathname == "/sign-up"
+              ? { color: "#1C64F2" }
+              : { color: "6B7280" }
+          }
+        >
           Register
         </Link>
       </div>

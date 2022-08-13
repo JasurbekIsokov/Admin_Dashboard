@@ -121,7 +121,7 @@ const SignUn = () => {
         <OAuth />
 
         <Link to="/sign-in" className="registerLink">
-          Sign Ip Instead
+          Sign In Instead
         </Link>
       </div>
     </>

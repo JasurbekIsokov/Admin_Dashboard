@@ -43,11 +43,11 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/login" element={<Admin />}></Route>
+          <Route path="/admin" element={<Admin />}></Route>
           <Route path="/team" element={<Team />}></Route>
           <Route path="/projects" element={<Projects />}></Route>
           <Route path="/calendar" element={<Calendar />}></Route>
-          <Route path="/login/message" element={<Message />}></Route>
+          <Route path="/admin/message" element={<Message />}></Route>
           <Route path="/contact-us" element={<Contact />}></Route>
           <Route path="/sign-in" element={<SignIn />}></Route>
           <Route path="/sign-up" element={<SignUn />}></Route>

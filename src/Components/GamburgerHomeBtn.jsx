@@ -40,10 +40,10 @@ const GamburderHomeBtn = () => {
           <Link className="mobile__language--title" to="/calendar">
             Calendar
           </Link>
-          <Link className="mobile__language--title" to="/login">
+          <Link className="mobile__language--title" to="/sign-in">
             Login
           </Link>
-          <Link className="mobile__language--title" to="/">
+          <Link className="mobile__language--title" to="/sign-up">
             Register
           </Link>
         </div>

@@ -77,7 +77,7 @@ const SignIn = () => {
             />
           </div>
 
-          <Link className="forgotPasswordLink" to="/">
+          <Link className="forgotPasswordLink" to="/forgot-password">
             Forgot Password
           </Link>
 
@@ -91,7 +91,7 @@ const SignIn = () => {
 
         <OAuth />
 
-        <Link to="/" className="registerLink">
+        <Link to="/sign-up" className="registerLink">
           Sign Up Instead
         </Link>
       </div>
