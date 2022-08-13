@@ -140,51 +140,6 @@ button {
   font-weight: 800;
 }
 
-.navbar {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 85px;
-  background-color: #ffffff;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.navbarNav {
-  width: 100%;
-  margin-top: 0.75rem;
-  overflow-y: hidden;
-}
-
-.navbarListItems {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.navbarListItem {
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.navbarListItemName,
-.navbarListItemNameActive {
-  margin-top: 0.25rem;
-  font-size: 14px;
-  font-weight: 600;
-  color: #8f8f8f;
-}
-.navbarListItemNameActive {
-  color: #2c2c2c;
-}
-
 .nameInput {
   margin-bottom: 2rem;
   background: url("../Images/badgeIcon.svg") #ffffff 2.5% center no-repeat;
@@ -375,245 +330,6 @@ button {
   }
 }
 
-.exploreCategories {
-  display: flex;
-  justify-content: space-between;
-}
-.exploreCategories a {
-  width: 48%;
-}
-
-.exploreCategoryImg {
-  min-height: 115px;
-  height: 15vw;
-  width: 100%;
-  border-radius: 1.5rem;
-  object-fit: cover;
-  margin: 0 auto;
-}
-
-.exploreCategoryName {
-  font-weight: 500;
-  text-align: left;
-}
-
-.category {
-  margin-bottom: 10rem;
-}
-
-.categoryListings {
-  padding: 0;
-}
-
-.categoryListing {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-  position: relative;
-}
-
-.categoryListingLink {
-  display: contents;
-}
-
-.categoryListingImg {
-  width: 30%;
-  height: 100px;
-  border-radius: 1.5rem;
-  object-fit: cover;
-}
-@media (min-width: 1024px) {
-  .categoryListingImg {
-    width: 19%;
-    height: 217px;
-  }
-}
-
-.categoryListingDetails {
-  width: 65%;
-}
-@media (min-width: 1024px) {
-  .categoryListingDetails {
-    width: 79%;
-  }
-}
-
-.categoryListingLocation {
-  font-weight: 600;
-  font-size: 0.7rem;
-  opacity: 0.8;
-  margin-bottom: 0;
-}
-
-.categoryListingName {
-  font-weight: 600;
-  font-size: 1.25rem;
-  margin: 0;
-}
-
-.categoryListingPrice {
-  margin-top: 0.5rem;
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: #00cc66;
-  margin-bottom: 0;
-  display: flex;
-  align-items: center;
-}
-
-.categoryListingInfoDiv {
-  display: flex;
-  justify-content: space-between;
-  max-width: 275px;
-}
-
-.categoryListingInfoText {
-  font-weight: 500;
-  font-size: 0.7rem;
-}
-
-.loadMore {
-  cursor: pointer;
-  width: 8rem;
-  margin: 0 auto;
-  text-align: center;
-  padding: 0.25rem 0.5rem;
-  background-color: #000000;
-  color: #ffffff;
-  font-weight: 600;
-  border-radius: 1rem;
-  opacity: 0.7;
-  margin-top: 2rem;
-}
-
-.listingDetails {
-  margin-bottom: 10rem;
-}
-
-.shareIconDiv {
-  cursor: pointer;
-  position: fixed;
-  top: 3%;
-  right: 5%;
-  z-index: 2;
-  background-color: #ffffff;
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.listingName {
-  font-weight: 600;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.listingLocation {
-  margin-top: 0;
-  font-weight: 600;
-}
-
-.discountPrice {
-  padding: 0.25rem 0.5rem;
-  background-color: #000000;
-  color: #ffffff;
-  border-radius: 1rem;
-  font-size: 0.8rem;
-  font-weight: 600;
-  display: inline;
-}
-
-.listingType {
-  padding: 0.25rem 0.5rem;
-  background-color: #00cc66;
-  color: #ffffff;
-  border-radius: 2rem;
-  display: inline;
-  font-weight: 600;
-  font-size: 0.8rem;
-  margin-right: 1rem;
-}
-
-.listingDetailsList {
-  padding: 0;
-  list-style-type: none;
-}
-.listingDetailsList li {
-  margin: 0.3rem 0;
-  font-weight: 500;
-  opacity: 0.8;
-}
-
-.listingLocationTitle {
-  margin-top: 2rem;
-  font-weight: 600;
-  font-size: 1.25rem;
-}
-
-.leafletContainer {
-  width: 100%;
-  height: 200px;
-  overflow-x: hidden;
-  margin-bottom: 3rem;
-}
-@media (min-width: 1024px) {
-  .leafletContainer {
-    height: 400px;
-  }
-}
-
-.linkCopied {
-  position: fixed;
-  top: 9%;
-  right: 5%;
-  z-index: 2;
-  background-color: #ffffff;
-  border-radius: 1rem;
-  padding: 0.5rem 1rem;
-  font-weight: 600;
-}
-
-.contactListingName {
-  margin-top: -1rem;
-  margin-bottom: 0;
-  font-weight: 600;
-}
-
-.contactListingLocation {
-  margin-top: 0.25rem;
-  font-weight: 600;
-}
-
-.contactLandlord {
-  margin-top: 2rem;
-  display: flex;
-  align-items: center;
-}
-
-.landlordName {
-  font-weight: 600;
-  font-size: 1.2rem;
-}
-
-.messageForm {
-  margin-top: 0.5rem;
-}
-
-.messageDiv {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 4rem;
-}
-
-.messageLabel {
-  margin-bottom: 0.5rem;
-}
-
 .profile {
   margin-bottom: 10rem;
 }
@@ -622,6 +338,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .logOut {
@@ -639,6 +356,7 @@ button {
   display: flex;
   justify-content: space-between;
   max-width: 500px;
+  margin: 1rem 0;
 }
 
 .personalDetailsText {
@@ -809,18 +527,4 @@ button {
 
 .createListingButton {
   margin-top: 5rem;
-}
-
-.offers {
-  margin-bottom: 10rem;
-}
-
-.offerBadge {
-  padding: 0.25rem 0.5rem;
-  background-color: #000000;
-  color: #ffffff;
-  border-radius: 1rem;
-  margin-left: 1rem;
-  font-size: 0.8rem;
-  opacity: 0.75;
 }

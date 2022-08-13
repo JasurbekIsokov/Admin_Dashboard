@@ -1,6 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import Home from "./Pages/Home";
 import Admin from "./Pages/Admin";
 import Team from "./Pages/Team";
@@ -36,21 +39,25 @@ import Profile from "./Pages/Profile";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/login" element={<Admin />}></Route>
-        <Route path="/team" element={<Team />}></Route>
-        <Route path="/projects" element={<Projects />}></Route>
-        <Route path="/calendar" element={<Calendar />}></Route>
-        <Route path="/login/message" element={<Message />}></Route>
-        <Route path="/contact-us" element={<Contact />}></Route>
-        <Route path="/sign-in" element={<SignIn />}></Route>
-        <Route path="/sign-up" element={<SignUn />}></Route>
-        <Route path="/forgot-password" element={<ForgotPassword />}></Route>
-        <Route path="/profile" element={<Profile />}></Route>
-      </Routes>
-    </Router>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/login" element={<Admin />}></Route>
+          <Route path="/team" element={<Team />}></Route>
+          <Route path="/projects" element={<Projects />}></Route>
+          <Route path="/calendar" element={<Calendar />}></Route>
+          <Route path="/login/message" element={<Message />}></Route>
+          <Route path="/contact-us" element={<Contact />}></Route>
+          <Route path="/sign-in" element={<SignIn />}></Route>
+          <Route path="/sign-up" element={<SignUn />}></Route>
+          <Route path="/forgot-password" element={<ForgotPassword />}></Route>
+          <Route path="/profile" element={<Profile />}></Route>
+        </Routes>
+      </Router>
+
+      <ToastContainer />
+    </>
   );
 }
 
