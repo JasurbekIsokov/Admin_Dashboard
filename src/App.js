@@ -14,9 +14,9 @@ import Calendar from "./Pages/Calendar";
 import Contact from "./Pages/Contact";
 import SignIn from "./Pages/Login";
 import SignUn from "./Pages/Register";
-import ForgotPassword from "./Pages/ForgotPassword";
 import Profile from "./Pages/Profile";
 import Page404 from "./Pages/Page404";
+import ForgotPassword from "./Pages/ForgotPassword";
 
 import "./Assets/Styles/chart.scss";
 import "./Assets/Styles/footer.scss";

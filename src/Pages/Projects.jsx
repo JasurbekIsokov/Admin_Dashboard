@@ -6,7 +6,7 @@ const Projects = () => {
     <div className="projectsPage">
       <HomeHeader />
       <div className="projectsPage__main">
-        <i class="fa-solid fa-diagram-project"></i>
+        <i className="fa-solid fa-diagram-project"></i>
       </div>
     </div>
   );

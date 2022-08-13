@@ -6,7 +6,7 @@ const Calendar = () => {
     <div className="calendarPage">
       <HomeHeader />
       <div className="calendarPage__main">
-        <i class="fa-solid fa-calendar-check"></i>
+        <i className="fa-solid fa-calendar-check"></i>
       </div>
     </div>
   );

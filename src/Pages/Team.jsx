@@ -6,7 +6,7 @@ const Team = () => {
     <div className="teamPage">
       <HomeHeader />
       <div className="teamPage__main">
-        <i class="fa-solid fa-mug-saucer"></i>
+        <i className="fa-solid fa-mug-saucer"></i>
       </div>
     </div>
   );

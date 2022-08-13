@@ -6,7 +6,7 @@ const Home = () => {
     <div className="homePage">
       <HomeHeader />
       <div className="homePage__main">
-        <i class="fa-solid fa-house-chimney"></i>
+        <i className="fa-solid fa-house-chimney"></i>
       </div>
     </div>
   );
