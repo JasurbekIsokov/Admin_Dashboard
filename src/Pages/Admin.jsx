@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
 
+import { getAuth, updateProfile } from "firebase/auth";
+import { updateDoc, doc } from "firebase/firestore";
+import { db } from "../firebace.config";
+import { useNavigate, Link } from "react-router-dom";
+import { toast } from "react-toastify";
+
 import AdminHeader from "../Layouts/AdminHeader";
 import Sidebar from "../Layouts/Sidebar";
 import Customers from "../Components/Customers";
@@ -9,6 +15,14 @@ import Footer from "../Layouts/Footer";
 import DemoLine from "../Components/Chart";
 
 const Admin = () => {
+  //Autentification qiluvchi function
+  const auth = getAuth();
+  const [changeDetails, setChangeDetails] = useState(false);
+  const [formData, setFormData] = useState({
+    name: auth.currentUser.displayName,
+    email: auth.currentUser.email,
+  });
+
   const [test, setTest] = useState("block");
   const [img, setImg] = useState(true);
 

@@ -10,6 +10,11 @@ import visibilityIcon from "../Assets/Images/visibilityIcon.svg";
 import HomeHeader from "../Layouts/HomeHeader";
 
 const SignIn = () => {
+  // x67uAE1jQAhQ8LGddHaD83BsFdM2;
+  // reloadUserInfo
+  // passwordHash;
+  // UkVEQUNURUQ=
+  // uid;
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
     email: "",
@@ -36,7 +41,13 @@ const SignIn = () => {
         email,
         password
       );
-      if (userCredential.user) {
+      if (
+        userCredential.user.email === "admin0000@gmail.com" &&
+        userCredential.user.reloadUserInfo.passwordHash === "UkVEQUNURUQ=" &&
+        userCredential.user.uid === "x67uAE1jQAhQ8LGddHaD83BsFdM2"
+      ) {
+        navigate("/admin");
+      } else if (userCredential.user) {
         navigate("/profile");
       }
     } catch (error) {

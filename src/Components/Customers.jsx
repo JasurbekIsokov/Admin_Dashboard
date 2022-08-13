@@ -26,7 +26,7 @@ const Customers = () => {
 
         return (
           <>
-            <div className="customers__box" key={id}>
+            <div className="customers__box">
               <div className="customers__box--left">
                 <div className={`customer${id}Image customerImage`}></div>
                 <div className="customers__box--left-title">

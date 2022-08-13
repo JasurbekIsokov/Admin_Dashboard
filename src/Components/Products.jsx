@@ -27,7 +27,7 @@ const Products = () => {
 
         return (
           <>
-            <div className="products__box" key={id}>
+            <div className="products__box">
               <div className="products__box--left">
                 <div className="products__box--left-title">
                   <p className="name">{`${title}`}</p>
