@@ -116,7 +116,7 @@ const GetMessage = () => {
         {messages.length === 0 ? (
           <p className="getMessage__pustoyTitle ">No messages</p>
         ) : (
-          messages.reverse().map((message) => {
+          messages.map((message) => {
             const { id, name, phoneNumber, description, date } = message;
 
             return (
@@ -167,7 +167,7 @@ const GetMessage = () => {
             There are no messages in the read list
           </p>
         ) : (
-          readMessages.reverse().map((message) => {
+          readMessages.map((message) => {
             const { id, name, phoneNumber, description, date } = message;
 
             return (

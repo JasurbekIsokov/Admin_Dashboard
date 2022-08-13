@@ -2,44 +2,81 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const Customers = () => {
-  const [customers, getCustomer] = useState([]);
-
-  const getCustomers = async () => {
-    try {
-      axios.get("http://localhost:3004/customers").then((responce) => {
-        getCustomer(responce.data);
-      });
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
-
-  useEffect(() => {
-    getCustomers();
-  }, []);
-
   return (
     <div className="customers">
       <p className="customers__title">Latest Customers</p>
-      {customers.map((customer) => {
-        const { id, name, email, img, sum } = customer;
 
-        return (
-          <>
-            <div className="customers__box">
-              <div className="customers__box--left">
-                <div className={`customer${id}Image customerImage`}></div>
-                <div className="customers__box--left-title">
-                  <p className="name">{`${name}`}</p>
-                  <p className="email">{`${email}`}</p>
-                </div>
-              </div>
-              <p className="customers__box--right">{`${sum}`}</p>
-            </div>
-            <hr />
-          </>
-        );
-      })}
+      <div className="customers__box">
+        <div className="customers__box--left">
+          <div className="customer1Image customerImage"></div>
+          <div className="customers__box--left-title">
+            <p className="name">Neil Sims</p>
+            <p className="email">email@example.com</p>
+          </div>
+        </div>
+        <p className="customers__box--right">$367</p>
+      </div>
+      <hr />
+
+      <div className="customers__box">
+        <div className="customers__box--left">
+          <div className="customer2Image customerImage"></div>
+          <div className="customers__box--left-title">
+            <p className="name">Bonnie Green</p>
+            <p className="email">email@example.com</p>
+          </div>
+        </div>
+        <p className="customers__box--right">$67</p>
+      </div>
+      <hr />
+
+      <div className="customers__box">
+        <div className="customers__box--left">
+          <div className="customer3Image customerImage"></div>
+          <div className="customers__box--left-title">
+            <p className="name">Micheal Gough</p>
+            <p className="email">email@example.com</p>
+          </div>
+        </div>
+        <p className="customers__box--right">$3467</p>
+      </div>
+      <hr />
+
+      <div className="customers__box">
+        <div className="customers__box--left">
+          <div className="customer4Image customerImage"></div>
+          <div className="customers__box--left-title">
+            <p className="name">Thomas Lean</p>
+            <p className="email">email@example.com</p>
+          </div>
+        </div>
+        <p className="customers__box--right">$2367</p>
+      </div>
+      <hr />
+
+      <div className="customers__box">
+        <div className="customers__box--left">
+          <div className="customer5Image customerImage"></div>
+          <div className="customers__box--left-title">
+            <p className="name">Lana Byrd</p>
+            <p className="email">email@example.com</p>
+          </div>
+        </div>
+        <p className="customers__box--right">$367</p>
+      </div>
+      <hr />
+
+      <div className="customers__box">
+        <div className="customers__box--left">
+          <div className="customer6Image customerImage"></div>
+          <div className="customers__box--left-title">
+            <p className="name">Karen Nelson</p>
+            <p className="email">email@example.com</p>
+          </div>
+        </div>
+        <p className="customers__box--right">$1367</p>
+      </div>
+      <hr />
     </div>
   );
 };
