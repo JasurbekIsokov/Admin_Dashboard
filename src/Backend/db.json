@@ -76,6 +76,92 @@
       "sales": "22"
     }
   ],
-  "message": [],
-  "readMessage": []
+  "message": [
+    {
+      "id": 1660364558612,
+      "name": "Anvar",
+      "phoneNumber": "998902102002",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, minima ea officiis repellendus harum eos.\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, minima ea officiis repellendus harum eos.\n",
+      "date": "9:22:38 - 6/7/2022"
+    },
+    {
+      "id": 1660364589462,
+      "name": "Fathulla",
+      "phoneNumber": "998902203223",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, minima ea officiis repellendus harum eos.\n\n",
+      "date": "9:23:9 - 6/7/2022"
+    },
+    {
+      "id": 1660364610311,
+      "name": "Olim",
+      "phoneNumber": "99894355335",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, minima ea officiis repellendus harum eos.\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, minima ea officiis repellendus harum eos.\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, minima ea officiis repellendus harum eos.\n",
+      "date": "9:23:30 - 6/7/2022"
+    },
+    {
+      "id": 1660364659543,
+      "name": "Sirojiddin",
+      "phoneNumber": "998908998882",
+      "description": "Lorem, iLorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, minima ea officiis repellendus harum eos.\npsum dolor sit amet consectetur adipisicing elit. Unde, minima ea officiis repellendus harum eos.\n",
+      "date": "9:24:19 - 6/7/2022"
+    },
+    {
+      "id": 1660364680431,
+      "name": "Otabek",
+      "phoneNumber": "998902311331",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, minima ea officiis repellendus harum eos.\n",
+      "date": "9:24:40 - 6/7/2022"
+    },
+    {
+      "id": 1660364698525,
+      "name": "Ilhom",
+      "phoneNumber": "998900031221",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, minima ea officiis repellendus harum eos.\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, minima ea officiis repellendus harum eos.\n\n",
+      "date": "9:24:58 - 6/7/2022"
+    },
+    {
+      "id": 1660364754846,
+      "name": "Diyor",
+      "phoneNumber": "998901102334",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+      "date": "9:25:54 - 6/7/2022"
+    }
+  ],
+  "readMessage": [
+    {
+      "id": 1660364499843,
+      "name": "Jahongir",
+      "phoneNumber": "998900010110",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, minima ea officiis repellendus harum eos.\n",
+      "date": "9:21:39 - 6/7/2022"
+    },
+    {
+      "id": 1660364793508,
+      "name": "Husan",
+      "phoneNumber": "998900033134",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, minima ea officiis repellendus harum eos.\n",
+      "date": "9:26:33 - 6/7/2022"
+    },
+    {
+      "id": 1660364728342,
+      "name": "Ibrohim",
+      "phoneNumber": "998904322112",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, minima ea officiis repellendus harum eos.\n",
+      "date": "9:25:28 - 6/7/2022"
+    },
+    {
+      "id": 1660364532196,
+      "name": "Begzod",
+      "phoneNumber": "998901001001",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, minima ea officiis repellendus harum eos.\nLorem, ipsum dolor sit amet consectetur adipisicing elit.",
+      "date": "9:22:12 - 6/7/2022"
+    },
+    {
+      "id": 1660367150819,
+      "name": "Ulugbek",
+      "phoneNumber": "11111111",
+      "description": "wfwwdwqwdqwqwd",
+      "date": "10:5:50 - 6/7/2022"
+    }
+  ]
 }

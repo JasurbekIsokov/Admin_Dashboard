@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 const GetMessage = () => {
   const [messages, getMessage] = useState([]);
@@ -15,6 +16,7 @@ const GetMessage = () => {
       });
     } catch (error) {
       console.log(error.message);
+      toast.error("There is an error fetching messages");
     }
   };
 
@@ -27,9 +29,11 @@ const GetMessage = () => {
             .post("http://localhost:3004/readMessage", responce.data)
             .then((responce) => {
               getReadMessages();
+              toast.success("Added to read messages");
             });
         } catch (error) {
           console.log(error.message);
+          toast.error("There was an error adding the messages");
         }
       });
     } catch (error) {
@@ -45,6 +49,7 @@ const GetMessage = () => {
       });
     } catch (error) {
       console.log(error.message);
+      toast.error("There is an error fetching messages");
     }
   };
 
@@ -53,9 +58,11 @@ const GetMessage = () => {
     try {
       axios.delete(`http://localhost:3004/message/${id}`).then((responce) => {
         getMessages();
+        toast.success("Message deleted");
       });
     } catch (error) {
       console.log(error.message);
+      toast.error("There was an error deleting the message");
     }
   };
 
@@ -66,9 +73,11 @@ const GetMessage = () => {
         .delete(`http://localhost:3004/readMessage/${id}`)
         .then((responce) => {
           getReadMessages();
+          toast.success("Message deleted");
         });
     } catch (error) {
       console.log(error.message);
+      toast.error("There was an error deleting the message");
     }
   };
 
@@ -90,7 +99,14 @@ const GetMessage = () => {
   // o'qilgan habarlarga qo'shish
   const readOnClick = (id) => {
     postReadMessage(id);
-    deleteMessage(id);
+    try {
+      axios.delete(`http://localhost:3004/message/${id}`).then((responce) => {
+        getMessages();
+      });
+    } catch (error) {
+      console.log(error.message);
+      toast.error("There was an error deleting the message");
+    }
   };
 
   return (

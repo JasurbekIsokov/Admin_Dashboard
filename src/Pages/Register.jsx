@@ -14,7 +14,6 @@ import OAuth from "../Components/OAuth";
 import { ReactComponent as ArrowRightIcon } from "../Assets/Images/keyboardArrowRightIcon.svg";
 import visibilityIcon from "../Assets/Images/visibilityIcon.svg";
 import HomeHeader from "../Layouts/HomeHeader";
-
 const SignUn = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({

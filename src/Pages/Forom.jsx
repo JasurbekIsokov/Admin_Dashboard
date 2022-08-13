@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 const Forom = () => {
   const [message, setMessage] = useState([]);
@@ -28,7 +29,7 @@ const Forom = () => {
   };
 
   const submitForm = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     postMessgae();
   };
 
@@ -46,9 +47,14 @@ const Forom = () => {
         .post("http://localhost:3004/message", messageBaza)
         .then((responce) => {
           setMessage(responce);
+          toast.success("Message sent");
+          nameInputRef.current.value = "";
+          phoneInputRef.current.value = "";
+          messageInputRef.current.value = "";
         });
     } catch (error) {
       console.log(error.message);
+      toast.error("Could not send message. Please try again");
     }
   };
 
