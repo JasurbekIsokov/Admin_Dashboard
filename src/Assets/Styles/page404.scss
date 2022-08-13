@@ -39,3 +39,20 @@
     }
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .page404 {
+    &__top {
+      height: 300px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .page404 {
+    &__top {
+      width: 95%;
+      height: 200px;
+    }
+  }
+}

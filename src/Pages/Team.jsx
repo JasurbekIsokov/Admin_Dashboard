@@ -5,8 +5,9 @@ const Team = () => {
   return (
     <div className="teamPage">
       <HomeHeader />
-
-      <h1>Team Page</h1>
+      <div className="teamPage__main">
+        <i class="fa-solid fa-mug-saucer"></i>
+      </div>
     </div>
   );
 };

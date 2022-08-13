@@ -3,9 +3,11 @@ import HomeHeader from "../Layouts/HomeHeader";
 
 const Calendar = () => {
   return (
-    <div>
+    <div className="calendarPage">
       <HomeHeader />
-      <h1>Calendar</h1>
+      <div className="calendarPage__main">
+        <i class="fa-solid fa-calendar-check"></i>
+      </div>
     </div>
   );
 };

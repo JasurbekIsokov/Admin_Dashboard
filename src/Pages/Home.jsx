@@ -5,6 +5,9 @@ const Home = () => {
   return (
     <div className="homePage">
       <HomeHeader />
+      <div className="homePage__main">
+        <i class="fa-solid fa-house-chimney"></i>
+      </div>
     </div>
   );
 };

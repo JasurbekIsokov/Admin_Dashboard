@@ -3,9 +3,11 @@ import HomeHeader from "../Layouts/HomeHeader";
 
 const Projects = () => {
   return (
-    <div>
+    <div className="projectsPage">
       <HomeHeader />
-      <h1>Projects Page</h1>
+      <div className="projectsPage__main">
+        <i class="fa-solid fa-diagram-project"></i>
+      </div>
     </div>
   );
 };
