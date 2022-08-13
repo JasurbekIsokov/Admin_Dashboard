@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { ToastContainer } from "react-toastify";
+
 import "react-toastify/dist/ReactToastify.css";
 
 import Home from "./Pages/Home";
@@ -10,12 +11,19 @@ import Team from "./Pages/Team";
 import Message from "./Pages/Message";
 import Projects from "./Pages/Projects";
 import Calendar from "./Pages/Calendar";
+import Contact from "./Pages/Contact";
+import SignIn from "./Pages/Login";
+import SignUn from "./Pages/Register";
+import ForgotPassword from "./Pages/ForgotPassword";
+import Profile from "./Pages/Profile";
+import Page404 from "./Pages/Page404";
 
 import "./Assets/Styles/chart.scss";
 import "./Assets/Styles/footer.scss";
 import "./Assets/Styles/contact.scss";
 import "./Assets/Styles/sidebar.scss";
 import "./Assets/Styles/message.scss";
+import "./Assets/Styles/page404.scss";
 import "./Assets/Styles/customer.scss";
 import "./Assets/Styles/products.scss";
 import "./Assets/Styles/homeHeader.scss";
@@ -31,11 +39,6 @@ import "./Assets/Styles/homePage.scss";
 import "./Assets/Styles/adminPage.scss";
 
 import "./Assets/Styles/index.scss";
-import Contact from "./Pages/Contact";
-import SignIn from "./Pages/Login";
-import SignUn from "./Pages/Register";
-import ForgotPassword from "./Pages/ForgotPassword";
-import Profile from "./Pages/Profile";
 
 function App() {
   return (
@@ -53,6 +56,7 @@ function App() {
           <Route path="/sign-up" element={<SignUn />}></Route>
           <Route path="/forgot-password" element={<ForgotPassword />}></Route>
           <Route path="/profile" element={<Profile />}></Route>
+          <Route path="*" element={<Page404 />}></Route>
         </Routes>
       </Router>
 

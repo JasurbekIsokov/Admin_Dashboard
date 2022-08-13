@@ -17,6 +17,7 @@ import DemoLine from "../Components/Chart";
 const Admin = () => {
   //Autentification qiluvchi function
   const auth = getAuth();
+
   const [changeDetails, setChangeDetails] = useState(false);
   const [formData, setFormData] = useState({
     name: auth.currentUser.displayName,

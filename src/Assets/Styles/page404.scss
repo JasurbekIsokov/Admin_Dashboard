@@ -1,0 +1,41 @@
+.page404 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  &__top {
+    width: 60%;
+    height: 400px;
+    margin: 0rem auto;
+    background-image: url(../Images/404.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &__notFound {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 14px;
+    margin: 1rem auto;
+    color: #6b7280;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    button {
+      padding: 10px 16px;
+      border: none;
+      outline: none;
+      border-radius: 8px;
+      color: white;
+      background-color: rgb(10, 103, 60);
+      cursor: pointer;
+    }
+  }
+}
