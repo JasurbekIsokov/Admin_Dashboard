@@ -1,16 +1,6 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import {
-  getAuth,
-  createUserWithEmailAndPassword,
-  updateProfile,
-} from "firebase/auth";
-import { db } from "../firebace.config";
-import { setDoc, doc, serverTimestamp } from "firebase/firestore";
 
-import { toast } from "react-toastify";
-
-import OAuth from "../Components/OAuth";
 import { ReactComponent as ArrowRightIcon } from "../Assets/Images/keyboardArrowRightIcon.svg";
 import visibilityIcon from "../Assets/Images/visibilityIcon.svg";
 import HomeHeader from "../Layouts/HomeHeader";
@@ -25,57 +15,17 @@ const SignUn = () => {
 
   const navigate = useNavigate();
 
-  const onChange = (e) => {
-    setFormData((prevState) => ({
-      ...prevState,
-      // input change bo'lganda uning id si orqali bu qaysi input ekanligini aniqlab oladi
-      [e.target.id]: e.target.value,
-    }));
-  };
-
-  const onSubmit = async (e) => {
-    e.preventDefault();
-
-    try {
-      const auth = getAuth();
-
-      const userCredential = await createUserWithEmailAndPassword(
-        auth,
-        email,
-        password
-      );
-
-      const user = userCredential.user;
-
-      updateProfile(auth.currentUser, {
-        displayName: name,
-      });
-
-      const formDataCopy = { ...formData };
-      delete formDataCopy.password;
-      formDataCopy.timestamp = serverTimestamp();
-
-      await setDoc(doc(db, "users", user.uid), formDataCopy);
-
-      navigate("/");
-    } catch (error) {
-      toast.error("Something went wrong with registration");
-    }
-  };
-
   return (
     <>
       <HomeHeader />
       <div className="pageContainer">
-        <form onSubmit={onSubmit}>
+        <form>
           <input
             type="name"
             name="name"
             id="name"
             className="nameInput"
             placeholder="name"
-            value={name}
-            onChange={onChange}
           />
           <input
             type="email"
@@ -83,8 +33,6 @@ const SignUn = () => {
             id="email"
             className="emailInput"
             placeholder="email"
-            value={email}
-            onChange={onChange}
           />
 
           <div className="passwordInputDiv">
@@ -93,8 +41,6 @@ const SignUn = () => {
               className="passwordInput"
               id="password"
               placeholder="Password"
-              value={password}
-              onChange={onChange}
             />
 
             <img
@@ -116,8 +62,6 @@ const SignUn = () => {
             </button>
           </div>
         </form>
-
-        <OAuth />
 
         <Link to="/sign-in" className="registerLink">
           Sign In Instead

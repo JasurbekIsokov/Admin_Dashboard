@@ -1,18 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { ToastContainer } from "react-toastify";
-
-import "react-toastify/dist/ReactToastify.css";
-
 import Team from "./Pages/Team";
 import Home from "./Pages/Home";
-import Admin from "./Pages/Admin";
+// import Admin from "./Pages/Admin";
 import SignIn from "./Pages/Login";
 import SignUn from "./Pages/Register";
-import Profile from "./Pages/Profile";
+// import Profile from "./Pages/Profile";
 import Page404 from "./Pages/Page404";
-import Message from "./Pages/Message";
+// import Message from "./Pages/Message";
 import Contact from "./Pages/Contact";
 import Calendar from "./Pages/Calendar";
 import Projects from "./Pages/Projects";
@@ -46,21 +42,21 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/admin" element={<Admin />}></Route>
+          {/* <Route path="/admin" element={<Admin />}></Route> */}
           <Route path="/team" element={<Team />}></Route>
           <Route path="/projects" element={<Projects />}></Route>
           <Route path="/calendar" element={<Calendar />}></Route>
-          <Route path="/admin/message" element={<Message />}></Route>
+          {/* <Route path="/admin/message" element={<Message />}></Route> */}
           <Route path="/contact-us" element={<Contact />}></Route>
           <Route path="/sign-in" element={<SignIn />}></Route>
           <Route path="/sign-up" element={<SignUn />}></Route>
           <Route path="/forgot-password" element={<ForgotPassword />}></Route>
-          <Route path="/profile" element={<Profile />}></Route>
+          {/* <Route path="/profile" element={<Profile />}></Route> */}
           <Route path="*" element={<Page404 />}></Route>
         </Routes>
       </Router>
 
-      <ToastContainer />
+      {/* <ToastContainer /> */}
     </>
   );
 }
