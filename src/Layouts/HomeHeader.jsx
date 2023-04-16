@@ -1,13 +1,12 @@
 import React from "react";
+
 import { Link, useLocation } from "react-router-dom";
 
 import logo from "../Assets/Images/Logo.svg";
 import login from "../Assets/Images/login.svg";
-import GamburderHomeBtn from "../Components/GamburgerHomeBtn";
 
 const HomeHeader = () => {
   const loc = useLocation();
-  // console.log(loc.pathname);
 
   return (
     <header className="header">
@@ -17,65 +16,48 @@ const HomeHeader = () => {
           <ul>
             <li>
               <Link
-                className="link"
                 to="/"
-                style={
-                  loc.pathname == "/"
-                    ? { color: "#1C64F2" }
-                    : { color: "6B7280" }
-                }
+                style={{ color: loc.pathname == "/" ? "#1C64F2" : "6B7280" }}
               >
                 Dashboard
               </Link>
             </li>
             <li>
               <Link
-                className="link"
                 to="/team"
-                style={
-                  loc.pathname == "/team"
-                    ? { color: "#1C64F2" }
-                    : { color: "6B7280" }
-                }
+                style={{
+                  color: loc.pathname == "/team" ? "#1C64F2" : "6B7280",
+                }}
               >
                 Team
               </Link>
             </li>
             <li>
               <Link
-                className="link"
                 to="/projects"
-                style={
-                  loc.pathname == "/projects"
-                    ? { color: "#1C64F2" }
-                    : { color: "6B7280" }
-                }
+                style={{
+                  color: loc.pathname == "/projects" ? "#1C64F2" : "6B7280",
+                }}
               >
                 Projects
               </Link>
             </li>
             <li>
               <Link
-                className="link"
                 to="/calendar"
-                style={
-                  loc.pathname == "/calendar"
-                    ? { color: "#1C64F2" }
-                    : { color: "6B7280" }
-                }
+                style={{
+                  color: loc.pathname == "/calendar" ? "#1C64F2" : "6B7280",
+                }}
               >
                 Calendar
               </Link>
             </li>
             <li>
               <Link
-                className="link"
-                to="/contact-us"
-                style={
-                  loc.pathname == "/contact-us"
-                    ? { color: "#1C64F2" }
-                    : { color: "6B7280" }
-                }
+                to="/contact"
+                style={{
+                  color: loc.pathname == "/contact" ? "#1C64F2" : "6B7280",
+                }}
               >
                 Contact Us
               </Link>
@@ -86,32 +68,21 @@ const HomeHeader = () => {
       <div className="header__right">
         <img src={login} alt="login" />
         <Link
-          className="link"
           to="/sign-in"
-          style={
-            loc.pathname == "/sign-in"
-              ? { color: "#1C64F2" }
-              : { color: "6B7280" }
-          }
+          style={{ color: loc.pathname == "/sign-in" ? "#1C64F2" : "6B7280" }}
         >
           Login
         </Link>
         <p>/</p>
+
         <Link
-          className="link"
           to="/sign-up"
-          style={
-            loc.pathname == "/sign-up"
-              ? { color: "#1C64F2" }
-              : { color: "6B7280" }
-          }
+          style={{ color: loc.pathname == "/sign-up" ? "#1C64F2" : "6B7280" }}
         >
           Register
         </Link>
       </div>
-      <div className="header__menu">
-        <GamburderHomeBtn />
-      </div>
+      <div className="header__menu"></div>
     </header>
   );
 };

@@ -7,13 +7,22 @@ import HomeHeader from "../Layouts/HomeHeader";
 
 const SignIn = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const [formData, setFormData] = useState({
+  const navigate = useNavigate();
+
+  const userEmail = "email@gmail.com";
+  const userPass = "0000";
+
+  const [userData, setUserData] = useState({
     email: "",
     password: "",
   });
-  const { email, password } = formData;
 
-  const navigate = useNavigate();
+  const handleClick = (e) => {
+    e.preventDefault();
+    if (userData.email == userEmail && userData.password == userPass) {
+      navigate("/admin");
+    }
+  };
 
   return (
     <>
@@ -26,6 +35,13 @@ const SignIn = () => {
             id="email"
             className="emailInput"
             placeholder="email"
+            value={userData.email}
+            onChange={(e) =>
+              setUserData((prev) => ({
+                ...prev,
+                email: e.target.value,
+              }))
+            }
           />
 
           <div className="passwordInputDiv">
@@ -34,6 +50,13 @@ const SignIn = () => {
               className="passwordInput"
               id="password"
               placeholder="Password"
+              value={userData.password}
+              onChange={(e) =>
+                setUserData((prev) => ({
+                  ...prev,
+                  password: e.target.value,
+                }))
+              }
             />
 
             <img
@@ -48,7 +71,7 @@ const SignIn = () => {
             Forgot Password
           </Link>
 
-          <div className="signInBar">
+          <div className="signInBar" onClick={(e) => handleClick(e)}>
             <p className="signInText">Sign In</p>
             <button className="signInButton">
               <ArrowRightIcon fill="#fff" width="34px" height="34px" />
